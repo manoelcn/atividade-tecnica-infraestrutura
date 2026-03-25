@@ -54,9 +54,9 @@ atividade-tecnica-infraestrutura/
 
 - PostgreSQL: Instalado e configurado.
 
-- Bash: Para execução dos scripts .sh.
+- Bash: Para execução dos scripts `.sh`.
 
-- Serviços: Instâncias de jboss e tomcat (para teste do monitoramento).
+- Serviços: Instâncias de `jboss` e `tomcat` (para teste do monitoramento).
 
 ---
 
@@ -83,7 +83,7 @@ chmod +x db/*.sh services/*.sh
 
 1. Configurar o Banco de Dados
 
-O script setup.sql cria o banco db, a tabela colaboradores e insere 5 registros. Execute:
+O script `setup.sql` cria o banco `db`, a tabela `colaboradores` e insere 5 registros. Execute:
 
 ```bash
 sudo -u postgres psql -f db/setup.sql
@@ -91,7 +91,7 @@ sudo -u postgres psql -f db/setup.sql
 
 2. Dump do Banco
 
-O script dump.sh utiliza o pg_dump para gerar um arquivo db_dump.sql.
+O script `dump.sh` utiliza o `pg_dum`p para gerar um arquivo `db_dump.sql`.
 
 ```bash
 ./db/dump.sh
@@ -99,7 +99,7 @@ O script dump.sh utiliza o pg_dump para gerar um arquivo db_dump.sql.
 
 3. Restore do Banco
 
-O script restore.sh cria o banco novamente e restaura os dados do arquivo gerado no passo anterior.
+O script `restore.sh` cria o banco novamente e restaura os dados do arquivo gerado no passo anterior.
 
 >Atenção: o script cria um novo banco chamado db. Certifique-se de que ele não existe antes de rodar, ou remova-o manualmente.
 
@@ -109,9 +109,45 @@ O script restore.sh cria o banco novamente e restaura os dados do arquivo gerado
 
 4. Verificação de Serviços
 
-O script check_services.sh monitora os processos jboss e tomcat via pgrep e ps.
+O script `check_services.sh` monitora os processos `jboss` e `tomcat` via `pgrep` e `ps`.
 
 ```bash
 ./services/check_services.sh
 ```
 
+---
+
+## 🖥️ Saída Esperada
+
+`dump.sh`
+
+```
+Starting the database dump...
+Dump completed and file saved to db_dump.sql.
+```
+
+`restore.sh`
+
+```
+Starting the database restore...
+Database created.
+Database restored successfully.
+```
+
+`check_services.sh`
+
+Instâncias ativas:
+
+```
+jboss is ON
+jboss has been active for 02:15:30
+tomcat is ON
+tomcat has been active for 01:10:05
+```
+
+Instâncias inativas:
+
+```
+jboss in OFF
+tomcat in OFF
+```
