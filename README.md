@@ -6,15 +6,11 @@ Este repositório contém a solução para a atividade prática do processo sele
 
 ## 📋 Índice
  
-- [Sobre o Projeto](#sobre-o-projeto)
-- [Pré-requisitos](#pré-requisitos)
-- [Estrutura do Repositório](#estrutura-do-repositório)
-- [Configuração do Ambiente](#configuração-do-ambiente)
-- [Como Rodar os Scripts](#como-rodar-os-scripts)
-  - [1. Configurar o Banco de Dados](#1-configurar-o-banco-de-dados)
-  - [2. Dump do Banco de Dados](#2-dump-do-banco-de-dados)
-  - [3. Restore do Banco de Dados](#3-restore-do-banco-de-dados)
-  - [4. Verificação de Instâncias JBoss e Tomcat](#4-verificação-de-instâncias-jboss-e-tomcat)
+- [Sobre o Projeto](#-sobre-o-projeto)
+- [Estrutura do Repositório](#-estrutura-do-repositório)
+- [Pré-requisitos](#%EF%B8%8F-pré-requisitos)
+- [Configuração do Ambiente](#-configuração-do-ambiente)
+- [Como Rodar os Scripts](#%EF%B8%8F-como-rodar-os-scripts)
 - [Saída Esperada](#saída-esperada)
  
 ---
