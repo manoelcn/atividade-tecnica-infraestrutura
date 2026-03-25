@@ -11,7 +11,7 @@ Este repositório contém a solução para a atividade prática do processo sele
 - [Pré-requisitos](#%EF%B8%8F-pré-requisitos)
 - [Configuração do Ambiente](#-configuração-do-ambiente)
 - [Como Rodar os Scripts](#%EF%B8%8F-como-rodar-os-scripts)
-- [Saída Esperada](#saída-esperada)
+- [Saída Esperada](#%EF%B8%8F-saída-esperada)
  
 ---
 
